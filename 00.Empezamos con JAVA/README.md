@@ -2,7 +2,7 @@
 - Origen
 - Necesidades que cubría: multiplataforma|POO|Garbage Collector
 <p align="left">
-  <img src="https://cdn.wrytin.com/images/wrytup/r/1024/greenbbq-jz48l38k.jpeg" width="700">
+  <img src="images/greenbbq-jz48l38k.jpeg" width="700">
 </p>
 
 ## Principal uso de java a día de hoy
