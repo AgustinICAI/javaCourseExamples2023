@@ -22,6 +22,7 @@ Instalar Java SE - Openjdk (java y javac)
 
 Actualizar el PATH de tu máquina para incluir ./bin
 [Modificacion Path](https://www.java.com/en/download/help/path.xml)
+[PARA MAC - No es una web oficial](https://www.codejava.net/java-se/install-openjdk-18-on-macos)
 
 ## JDK vs JRE
 
