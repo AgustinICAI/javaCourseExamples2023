@@ -29,5 +29,11 @@ class Jugador{
     this.puntos += puntos;
   }
   
+  public String toString(){
+  /*String cad = nombreCompleto + "-" + equipo + "-" + valor + "-" + puntos + "-" + posicion;
+    return cad;*/
+    return nombreCompleto + "-" + equipo + "-" + valor + "-" + puntos + "-" + posicion;
+  }
+  
 
 }
