@@ -16,6 +16,6 @@ javac *.java
 * AppDibujo01: Crear tres cuadrados y pintarlos.
 * AppDibujo02: Crear tres cuadrados y pintarlos uno a uno esperando un segundo entre cada acción de pintar. El resultado debe ser el mismo que en el App anterior, pero con una pausa entre cada cuadrado pintado. Al final deberán aparecer los tres cuadrados.
 
-![alt text](https://raw.githubusercontent.com/DavidContrerasICAI/javaCourseExamples/master/02.arrayCuadradosDibujo/output.jpg)
+![alt text](./output.jpg)
 
 
