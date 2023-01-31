@@ -36,7 +36,7 @@ La herencia es el mecanismo por el cual un objeto adquiere algunas / todas las p
 
 Polimorfismo significa procesar objetos de manera diferente según su tipo de datos. Consiste en que un método tiene una implementación múltiple dependiendo de la clase en la que se ejecuta o los argumentos que se le pasen.
 
-- ** Sobrecarga ** significa que más de un método tiene el mismo nombre de método pero se comporta de manera diferente en función de los argumentos pasados ​​al llamar al método.
-- ** Sobreescritura ** significa que una clase heredada sobreesribe un método de su super-clase o clase padre. (lo veremos más adelante)
+- **Sobrecarga** significa que más de un método tiene el mismo nombre de método pero se comporta de manera diferente en función de los argumentos pasados ​​al llamar al método.
+- **Sobreescritura** significa que una clase heredada sobreesribe un método de su super-clase o clase padre. (lo veremos más adelante)
 
 
