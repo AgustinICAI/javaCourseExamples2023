@@ -7,12 +7,14 @@ import javax.swing.JFrame;
 public class Dibujo extends JFrame
 {
 	private Lienzo lienzo;
+  final static int X = 800;
+  final static int Y = 600;
 
 	public Dibujo()
 	{
 		super("Dibujo");
 		lienzo = new Lienzo();
-		lienzo.setSize(800,600);
+		lienzo.setSize(X,Y);
 		this.add(lienzo);
 		this.pack();
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
