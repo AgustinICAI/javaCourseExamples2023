@@ -6,7 +6,6 @@ class Usuario{
   //Entrenador [] entrenador;
   Miembro[] plantilla;
   
-  
   //Jugador[] plantilla; 
   int numEntrenadores;
   int numJugadores;
@@ -21,7 +20,30 @@ class Usuario{
     numJugadores = 0;
     numEntrenadores = 0;
   }
-  
+
+  void addMiembro(Miembro miembro){
+    if(miembro instanceof Jugador && numJugadores >= MAX_JUGADORES){
+        System.err.println("No caben más Jugadores. Máximo "+MAX_JUGADORES);
+        return;
+    }
+    else if(miembro instanceof Entrenador && numEntrenadores >= MAX_ENTRENADORES){
+        System.err.println("No caben más Entrenadores. Máximo "+MAX_ENTRENADORES);
+        return;
+    }
+    
+    plantilla[numJugadores + numEntrenadores] = miembro;    
+    
+    if(miembro instanceof Jugador)
+      numJugadores+=1;      
+    else if (miembro instanceof Entrenador)
+      numEntrenadores+=1;
+       
+  }
+
+
+
+
+  /*
   void addMiembro(Miembro miembro){
     if(miembro instanceof Jugador){
       if(numJugadores >= MAX_JUGADORES){
@@ -42,12 +64,8 @@ class Usuario{
         plantilla[numJugadores + numEntrenadores] = miembro;
         numEntrenadores+=1;
       }
-    }
-
-
-
-    
-  }
+    }    
+  }*/
 
   void addMiembro(Miembro[] miembros){
 

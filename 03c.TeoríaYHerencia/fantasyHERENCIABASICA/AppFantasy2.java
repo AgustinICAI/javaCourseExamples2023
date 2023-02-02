@@ -28,6 +28,7 @@ class AppFantasy2{
     //Upcasting
     Miembro m = new Entrenador("Cholo Simeone","Atletico del Madrid", 40000000,"Masculino", "Argentino");
     
+    
         
   }
 

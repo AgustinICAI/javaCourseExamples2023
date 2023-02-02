@@ -19,7 +19,7 @@ class Jugador extends Miembro{
   public String toString(){
   /*String cad = nombreCompleto + "-" + equipo + "-" + valor + "-" + puntos + "-" + posicion;
     return cad;*/
-    return super.toString() + "-" + posicion + "-" + Jugador.SEXO;
+    return "JUGADOR "+ super.toString() + "-" + posicion + "-" + Jugador.SEXO;
   }
   
 

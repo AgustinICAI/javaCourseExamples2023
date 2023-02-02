@@ -20,7 +20,7 @@ class Entrenador extends Miembro{
   
   
   public String toString(){
-    return super.toString() + "-" + sistemaDeJuego + "-" + sexo;
+    return "ENTRENADOR " + super.toString() + "-" + sistemaDeJuego + "-" + sexo;
   }
   
 
