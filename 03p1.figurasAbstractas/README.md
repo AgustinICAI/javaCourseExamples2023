@@ -16,7 +16,7 @@ import java.awt.Color;
 
 ##### Salida del programa
 
-* AppDibujo01: Crear un array que almacene objetos de tipo Cuadrado y Círculo, invocar el método getInfo() que devuelva la información de los objetos y mostrarla por consola.
+* AppDibujo01: Crear un array que almacene objetos de tipo Cuadrado y Círculo, invocar el método toString() que devuelva la información de los objetos y mostrarla por consola.
 * AppDibujo02: Lo mismo, pero la información aparecerá en pantalla con intervalos de 1 segundo.
 
 
