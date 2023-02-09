@@ -4,7 +4,7 @@ public class Cuadrado
 	int y;
 	int lado;
 
-	static boolean RELLENO = false;
+	boolean relleno;
 
 	/** 
 		Inicializa todos los atributos del objeto 
@@ -12,7 +12,7 @@ public class Cuadrado
 		@param y Posición x de la ventana en pixels
 		@param lado Tamaño del cuadrado en pixels
 	*/
-	Cuadrado(int x, int y, int lado)
+	Cuadrado(int x, int y, int lado, boolean relleno, Color color)
 	{
 		this.setX(x);
 		this.setY(y);
@@ -63,5 +63,15 @@ public class Cuadrado
 	{
 		return RELLENO;
 	}
+	
+	void paint(Graphics g){
+	  //g.setColor(getColor());IRIA EN LA CLASE PADRE
+	  super.paint(g);
+	  if(relleno)
+	    g.fillRect(getX(), getY(), getLado(), getLado());
+	  else
+	    g.drawRect(getX(), getY(), getLado(), getLado());
+	}
+	
 
 }

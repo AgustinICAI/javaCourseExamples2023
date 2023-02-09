@@ -1,7 +1,7 @@
 class Jugador extends Miembro implements Expulsable {
   Posicion posicion; 
   
-  static Miembro.Sexo SEXO = Miembro.Sexo.MASCULINO;
+  static Sexo SEXO = Sexo.MASCULINO;
   
   
   
@@ -23,11 +23,11 @@ class Jugador extends Miembro implements Expulsable {
     return "Bailando muy " +estadoAnimo;
   }
 
-  static void setSEXO(Miembro.Sexo sexo){
+  static void setSEXO(Sexo sexo){
     SEXO = sexo;
   }
   
-  static Miembro.Sexo getSEXO(){
+  static Sexo getSEXO(){
     return SEXO;
   }
   

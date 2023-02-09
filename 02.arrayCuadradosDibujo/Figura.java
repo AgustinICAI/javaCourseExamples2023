@@ -1,18 +1,20 @@
-public class Cuadrado
+import java.awt.Color;
+import java.awt.Graphics;
+
+public abstract class Figura
 {
 	int x;
 	int y;
-	int lado;
-
-	static boolean RELLENO = false;
-
+	boolean relleno;
+  Color color;
+  
 	/** 
 		Inicializa todos los atributos del objeto 
 		@param x Posición x de la ventana en pixels
 		@param y Posición x de la ventana en pixels
 		@param lado Tamaño del cuadrado en pixels
 	*/
-	Cuadrado(int x, int y, int lado)
+	Figura(int x, int y, boolean relleno, Color color)
 	{
 		this.setX(x);
 		this.setY(y);
@@ -45,23 +47,12 @@ public class Cuadrado
 		if(y>0 && y<600)
 			this.y = y;
 	}
-
-	void setLado(int lado)
-	{
-		if(x>1 && x<600)
-			this.lado = lado;
-		else
-			this.lado = 2;
+	Color getColor(){
+	  return this.color;
 	}
-
-	static void setRELLENO(boolean relleno)
-	{
-		RELLENO = relleno;
-	}
-
-	static boolean isRELLENO()
-	{
-		return RELLENO;
-	}
-
+  
+  void pintar (Graphics g){
+    g.setColor(getColor());
+  }
+  
 }
