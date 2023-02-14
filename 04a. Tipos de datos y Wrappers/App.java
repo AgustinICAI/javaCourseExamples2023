@@ -26,17 +26,7 @@ class App{
     System.out.println(c1);
     System.out.println(c2);
     
-    /*
-    int a = 65 → Integer → float →char → String → devolver el primer carácter en
-mayúsculas como char → int → byte*/
 
-    int a  = 65;
-    Integer a1 = a;
-    float f = a1;
-    char c = (char)f;
-    char[] cs = new char[1];
-    cs[0] = c;
-    String s1 = new String(cs); //Suponiendo que existe un constructor para pasar un char
     
     
     
