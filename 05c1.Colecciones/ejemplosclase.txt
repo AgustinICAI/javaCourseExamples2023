@@ -1,0 +1,65 @@
+p1, p2, p4, p5, null, null, null
+null, p1, p2, p4, p5, null, null
+p6, p1, p2, p4, p5, null, null
+p6, p1, p2, null, p4, p5, null, null
+p6, p1, p2, p7, p4, p5, null, null
+p6, p1, p2, null, p4, p5, null, null
+p6, p1, p2, p4, p5, null, null
+
+-> p1,-> p2,->, p3,-> p4,-> p5
+-> p6,-> p1,-> p2,->, p3,-> p4,-> p5
+-> p6,-> p1,-> p2,-> p7,-> p3,-> p4,-> p5
+-> p6,-> p1,-> p2,-> p3,-> p4,-> p5
+
+
+
+HASH  SET
+---- -----
+Rodrigo, Paco, Pepe, Maria, Juana
+34, 5, 8, 9, 5
+
+==========
+
+5 -> Paco, Juana
+8 -> Pepe
+9 -> Maria
+34 -> Rodrigo
+
+==========
+¿Agustín? -> 15
+¿Maria? -> 9 
+¿Juan? -> 34 -> False
+
+Jugador NombreCompleto HashCode(NombreCompleto)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
