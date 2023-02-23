@@ -2,26 +2,25 @@ En esta práctica, se simulará el Marca Fantasy sobre el que se ha trabajado en
 
 Recordando la lógica, los usuarios tienen unos jugadores los cuales darán una puntuación en cada jornada. 
 
-Los jugadores y entrenadores tiene un factor (del 1 al 10) con la calidad del jugador y los equipos tienen un factor de calidad (del 1 al 5).
+Los jugadores y entrenadores tiene un factor (del 1 al 10) con la calidad y los equipos tienen un factor de calidad (del 1 al 5).
 
-Para calcular esta puntuación de cada jugador, en cada jornada, es necesario aplicar la siguiente formula: numero_aleatorio(entre 0 y 1) * (factor_miembro + factor_equipo) 
+Para calcular esta puntuación de cada jugador/entrenador, en cada jornada, es necesario aplicar la siguiente formula: numero_aleatorio(entre 0 y 1) * (factor_miembro + factor_equipo) 
 
 Es necesario simular la lógica del concurso durante 5 jornadas de Liga.
 
-Cada vez que se celebre una jornada (una vez a la semana), el factor de los jugadores y equipos será actualizada de forma aleatoria: +-3 jugadores y +-1 equipos. 
+Cada vez que se celebre una jornada (una vez a la semana), el factor de los jugadores y equipos será actualizada de forma aleatoria: +-3 jugadores y +-1 equipos. Los entrenadores no se actualiza su factor.
 
 
-Para simular todo esto será necesario usar la clase Ramdom (https://docs.oracle.com/javase/8/docs/api/java/util/Random.html).
+Para simular todo esto será necesario usar la clase Ramdom (https://docs.oracle.com/javase/8/docs/api/java/util/Random.html), o clase Math su método ramdom.
 
-
-Es necesario por cada jornada como evoluciona la clasificación de los jugadores, así como un desglose de los puntos de sus jugadores. La competición empieza el 24 de febrero de 2023 y finalizará pasadas 5 semanas.
+Es necesario por cada jornada, ir mostrando como evoluciona la clasificación de los usuarios, así como un desglose de los puntos de sus jugadores. La competición cierra jornada los lunes, siendo el primero el 27 de febrero de 2023 y finalizará pasadas 5 semanas.
 
 Se pide:
 - Realizar el diagrama de clases.
 - Programar los casos de uso anterior descritos.
 
 Especificaciones técnicas:
-- Es recomendable usar la clase LocalDate/LocalDateTime e investigar como utilizarla en Internet. Para obtener diferencia de dias, se puede realizar mediante la clase Duration. *De cara al examen no hay que conocer estas clases, pero lo que si hay que saber es mirar la documentación JAVADOC*
+- Es recomendable usar la clase LocalDate/LocalDateTime e investigar como utilizarla en Internet. Para obtener diferencia de dias, se puede realizar mediante la clase Duration. *De cara al examen intercuatrimestral no hay que conocer estas clases, pero lo que si hay que saber es mirar la documentación JAVADOC*
 - Hay que trabajar utilizando *enums* donde sea necesario.
 - Crear expresamente un método void actualizarFactor() en Jugador y un void actualizarFactor() en Equipo.
 - Instance of/downncasting
