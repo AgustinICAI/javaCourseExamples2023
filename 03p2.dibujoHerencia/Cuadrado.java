@@ -1,32 +1,27 @@
-public class Cuadrado
-{
-	int x;
-	int y;
-	int lado;
+import java.awt.Color;
 
-	boolean relleno;
+public class Cuadrado extends Figura
+{ 
+	public final static int LADO_MIN = 2; 
+	public final static int LADO_MAX = 600; 
+	int lado;
 
 	/** 
 		Inicializa todos los atributos del objeto 
-		@param x Posición x de la ventana en pixels
-		@param y Posición x de la ventana en pixels
 		@param lado Tamaño del cuadrado en pixels
 	*/
-	Cuadrado(int x, int y, int lado, boolean relleno, Color color)
+	Cuadrado(int x, int y, boolean relleno, Color color, int lado)
 	{
-		this.setX(x);
-		this.setY(y);
+		super(x, y, relleno, color);
 		this.setLado(lado);
 	}
 
-	int getX()
+	void setLado(int lado)
 	{
-		return x;
-	}
-
-	int getY()
-	{
-		return y;
+		if(lado >= LADO_MIN && lado < LADO_MAX)
+			this.lado = lado;
+		else
+			this.lado = LADO_MIN;
 	}
 
 	int getLado()
@@ -34,44 +29,13 @@ public class Cuadrado
 		return lado;
 	}
 
-	void setX(int x)
+	@Override
+	void pintar(java.awt.Graphics g)
 	{
-		if(x>0 && x<800)
-			this.x = x;
-	}
-
-	void setY(int y)
-	{
-		if(y>0 && y<600)
-			this.y = y;
-	}
-
-	void setLado(int lado)
-	{
-		if(x>1 && x<600)
-			this.lado = lado;
+		super.pintar(g);
+		if(relleno)
+			g.fillRect(x, y, lado, lado); 
 		else
-			this.lado = 2;
+			g.drawRect(x, y, lado, lado); 
 	}
-
-	static void setRELLENO(boolean relleno)
-	{
-		RELLENO = relleno;
-	}
-
-	static boolean isRELLENO()
-	{
-		return RELLENO;
-	}
-	
-	void paint(Graphics g){
-	  //g.setColor(getColor());IRIA EN LA CLASE PADRE
-	  super.paint(g);
-	  if(relleno)
-	    g.fillRect(getX(), getY(), getLado(), getLado());
-	  else
-	    g.drawRect(getX(), getY(), getLado(), getLado());
-	}
-	
-
 }

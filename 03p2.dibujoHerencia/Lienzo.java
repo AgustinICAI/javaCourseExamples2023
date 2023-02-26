@@ -1,26 +1,26 @@
-import java.awt.*;
-import javax.swing.JFrame;
+import java.awt.Canvas;
+import java.awt.Graphics;
+
 
 public class Lienzo extends Canvas
 {
-	Cuadrado cuadrados[] = new Cuadrado[10];
-	static int NUM = 0;
+	Figura figuras[] = new Figura[10];
 
-	void addCuadrado(Cuadrado c)
+	void addFigura(Figura c)
 	{
-		for(int i=0;i<cuadrados.length;i++)
-			if(cuadrados[i]==null)
+		for(int i=0;i<figuras.length;i++)
+			if(figuras[i] == null)
 			{
-				cuadrados[i] = c;
-				i=cuadrados.length;
+				figuras[i] = c;
+				i = figuras.length;
 			}
 	}
 
+	@Override
 	public void paint(Graphics g)
 	{
-		for(Figura figura:figuras)
-			if(figura!=null)
-        figura.pintar(g);
-			
+		for(int i=0;i<figuras.length;i++)
+			if(figuras[i] != null)
+				figuras[i].pintar(g);
 	}
 }

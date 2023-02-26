@@ -1,4 +1,3 @@
-import java.awt.*;
 import javax.swing.JFrame;
 
 /** 
@@ -23,9 +22,9 @@ public class Dibujo extends JFrame
 		Pinta el cuadrado recibido por el App y actualiza el lienzo (canvas) 
 		@param cuadrado cuadrado a pintar
 	*/
-	public void pintar(Cuadrado cuadrado)
+	public void pintar(Figura figura)
 	{
-		lienzo.addCuadrado(cuadrado);
+		lienzo.addFigura(figura);
 		lienzo.repaint();
 	}
 
